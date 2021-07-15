@@ -61,7 +61,7 @@ body{
 
 .banner img{
     width: 60%;
-    height: 438px;
+    height: 425px;
     margin-left: 20%;
 }
 
@@ -232,66 +232,71 @@ footer a {
 
 /* Media Queries */
 @media only screen and (max-width: 688px) {
-  .nav-bar,
-  .highlight {
+  nav,
+  .highlights {
     width: 100%;
   }
-  .top-menu a {
+  nav a {
     visibility: hidden;
   }
   #login {
     padding: 10px 24px;
     width: 60%;
   }
-  .intro,
+  .copa,
   .higlight-intro {
     flex-direction: column;
     padding-left: 5%;
     padding-right: 5%;
   }
-  .intro-speech {
+  .intro-name {
     padding-bottom: 30px;
   }
-  .courses,
   .players {
     grid-template-columns: 1fr;
   }
-  .highlight-detail,
+  .matches,
   .highlight-banner img {
     width: 100%;
   }
 }
 /* Tablet devices */
 @media only screen and (min-width: 688px) and (max-width: 992px) {
-  .nav-bar .highlight {
+  nav .highlights {
     width: 100%;
     display: flex;
     flex-direction: column;
     padding-left: 5%;
     padding-right: 5%;
   }
-  .top-menu a {
-    visibility: hidden;
+
+  .intro img{
+      height: 70%;
+      width: 50%;
   }
-  #login {
+  
+  .login {
     padding: 10px 24px;
-    width: 168px;
+    width: 110px;
   }
   .intro,
-  .higlight-intro {
+  .highlights {
+    display: flex;
     flex-direction: column;
     padding-left: 5%;
     padding-right: 5%;
   }
-  .intro-speech {
+  .intro-name {
     padding-bottom: 30px;
   }
-  .players,
-  .courses {
+  .players {
     grid-template-columns: repeat(2, 1fr);
   }
-  .highlight-detail,
-  .highlight-banner img {
+  .matches{
+      width: 100%;
+      text-align: center;
+  }
+  .highlights img {
     width: 100%;
   }
 }
